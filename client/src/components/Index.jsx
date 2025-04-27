@@ -763,58 +763,6 @@ export const Index = () => {
     </section>
 
 
-    {/* <section className="testimonial section-space" data-background="assets/imgs/home-1/testi-bg.png">
-        <div className="container">
-            <div className="row">
-                <div className="col-xl-12">
-                    <div className="testi-carousel-wrap text-center">
-                        <div className="testi-thumb-wrap">
-                            <div className="swiper testi-carousel">
-                            </div>
-                        </div>
-                        <div className="swiper testi-content-carousel">
-                            <div className="swiper-wrapper">
-                                <div className="swiper-slide">
-                                    <div className="testimonial__content">
-                                        <div className="icon">
-                                            <svg width="46" height="36" viewBox="0 0 46 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M20.8796 10.4385C20.8796 4.67331 16.2048 0 10.4395 0C4.67432 0 0 4.67331 0 10.4385C0 16.0831 4.48278 20.6705 10.0796 20.8605C9.40243 25.4378 6.12015 31.015 1.13515 36C10.2148 36.0015 20.8796 23.0574 20.8796 10.4385Z" fill="#F7F7F7"/>
-                                                <path d="M34.8053 0C29.0406 0 24.3652 4.67331 24.3652 10.4385C24.3652 16.0831 28.848 20.6705 34.4448 20.8605C33.7677 25.4378 30.4859 31.015 25.5009 36C34.5811 36.0015 45.2458 23.0574 45.2458 10.4385C45.2458 4.67331 40.5715 0 34.8053 0Z" fill="#F7F7F7"/>
-                                            </svg>
-                                        </div>
-                                        <p>
-                                            So blinded by desire, that they cannot foresee the pain and trouble that <br> are bound to ensue; and equal blame belongs to those who fail in their <br> duty through weakness of will, which is the same as saying through <br> shrinking from toil and pain. 
-                                        </p>
-                                        <div className="testimonial__content-title">
-                                            <h4>Kane Williamson</h4>
-                                            <h6>Co-founder</h6>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="swiper-slide">
-                                    <div className="testimonial__content">
-                                        <div className="icon">
-                                            <svg width="46" height="36" viewBox="0 0 46 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M20.8796 10.4385C20.8796 4.67331 16.2048 0 10.4395 0C4.67432 0 0 4.67331 0 10.4385C0 16.0831 4.48278 20.6705 10.0796 20.8605C9.40243 25.4378 6.12015 31.015 1.13515 36C10.2148 36.0015 20.8796 23.0574 20.8796 10.4385Z" fill="#F7F7F7"/>
-                                                <path d="M34.8053 0C29.0406 0 24.3652 4.67331 24.3652 10.4385C24.3652 16.0831 28.848 20.6705 34.4448 20.8605C33.7677 25.4378 30.4859 31.015 25.5009 36C34.5811 36.0015 45.2458 23.0574 45.2458 10.4385C45.2458 4.67331 40.5715 0 34.8053 0Z" fill="#F7F7F7"/>
-                                            </svg>
-                                        </div>
-                                        <p>
-                                            So blinded by desire, that they cannot foresee the pain and trouble that <br> are bound to ensue; and equal blame belongs to those who fail in their <br> duty through weakness of will, which is the same as saying through <br> shrinking from toil and pain. 
-                                        </p>
-                                        <div className="testimonial__content-title">
-                                            <h4>Kane Williamson</h4>
-                                            <h6>Co-founder</h6>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> */}
 
 
     <section className="our-service__area section-space">
@@ -922,3 +870,5 @@ export const Index = () => {
     </>
   )
 }
+
+export default Index;
