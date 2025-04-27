@@ -1,137 +1,194 @@
-import React from 'react'
+import React, { useState, useEffect } from "react";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import Confetti from 'react-confetti';
+import Info from "./subcomponents/Info";
+import Breadcrumb from "./subcomponents/Breadcrumb";
 
-export const Contact = () => {
+const Contact = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    message: ""
+  });
+
+  const [isSubmitted, setIsSubmitted] = useState(false);
+  const [dimensions, setDimensions] = useState({ width: window.innerWidth, height: window.innerHeight });
+
+  useEffect(() => {
+    const handleResize = () => {
+      setDimensions({ width: window.innerWidth, height: window.innerHeight });
+    };
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value
+    });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      const response = await fetch("http://localhost:5000/api/contacts", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData)
+      });
+
+      const data = await response.json();
+
+      toast.success(data.message || "Form Submitted Successfully!", {
+        position: "top-center",
+        autoClose: 2000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        theme: "colored",
+      });
+
+      setFormData({ name: "", email: "", phone: "", message: "" });
+
+      // After small timeout, show Thank You page
+      setTimeout(() => {
+        setIsSubmitted(true);
+      }, 2000);
+
+    } catch (error) {
+      console.error("Form submit error:", error);
+
+      toast.error("Something went wrong!", {
+        position: "top-center",
+        autoClose: 2000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        theme: "colored",
+      });
+    }
+  };
+
+  if (isSubmitted) {
+    return (
+      <div style={{ height: "100vh", width: "100%", backgroundColor: "#f0f8ff", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", overflow: "hidden" }}>
+        <Confetti width={dimensions.width} height={dimensions.height} numberOfPieces={500} recycle={false} gravity={0.3} />
+        <h1 style={{ fontSize: "3rem", color: "#0f172a", marginBottom: "20px", textAlign: "center" }}>🎉 Thank You! 🎉</h1>
+        <p style={{ fontSize: "1.5rem", color: "#334155", textAlign: "center" }}>Your message has been successfully sent.</p>
+        <button
+          onClick={() => setIsSubmitted(false)}
+          style={{
+            marginTop: "30px",
+            padding: "12px 24px",
+            fontSize: "1.2rem",
+            backgroundColor: "#0ea5e9",
+            color: "#fff",
+            border: "none",
+            borderRadius: "8px",
+            cursor: "pointer",
+            transition: "all 0.3s"
+          }}
+        >
+          Send Another Message
+        </button>
+      </div>
+    );
+  }
+
   return (
     <>
-    <div class="breadcrumb__area dark-green breadcrumb-space overflow-hidden position-relative z-1" data-background="assets/imgs/breadcrumb/breadcrumb.png">
-        <div class="breadcrumb__shapes">
-            <img class="upDown" src="assets/imgs/breadcrumb/shape.png" alt="img not found"/>
-        </div>
-        <div class="container">
-            <div class="row align-items-center justify-content-between">
-                <div class="col-12">
-                    <div class="breadcrumb__content">
-                        <div class="breadcrumb__title-wrapper mb-15 mb-sm-10 mb-xs-5">
-                            <h1 class="breadcrumb__title color-white wow fadeInLeft animated" data-wow-delay=".2s">Contact Us</h1>
-                        </div>
-                        <div class="breadcrumb__menu wow fadeInLeft animated" data-wow-delay=".4s">
-                            <nav>
-                                <ul>
-                                    <li><span><a href="index.html">Home</a></span></li>
-                                    <li class="active"><span>Contact Us</span></li>
-                                </ul>
-                            </nav>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+      <Breadcrumb
+        title="Contact Us"
+        paths={[
+          { label: "Home", link: "/" },
+          { label: "Contact Us", active: true }
+        ]}
+      />
 
-    
-    <div class="si__info__area section-space">
-        <div class="container">
-            <div class="row si__info__border">
-                <div class="col-lg-4">
-                    <div class="si__info__box text-center">
-                        <div class="si__info__icon">
-                            <a href="contact.html#"><i class="fa-sharp fa-solid fa-location-dot"></i></a>
-                        </div>
-                        <div class="si__info__text">
-                            <span>Location</span>
-                            <p>2972 Westheimer Rd. Santa Ana, <br/> Illinois 85486</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="si__info__box text-center">
-                        <div class="si__info__icon">
-                            <a href="contact.html#"><i class="fa-solid fa-paper-plane"></i></a>
-                        </div>
-                        <div class="si__info__text">
-                            <span>E-mail</span>
-                            <p>tim.jennings@example.com<br/>debra.holt@example.com</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="si__info__box border__none text-center">
-                        <div class="si__info__icon">
-                            <a href="contact.html#"><i class="fa-sharp fa-solid fa-phone"></i></a>
-                        </div>
-                        <div class="si__info__text">
-                            <span>Contact</span>
-                            <p>019457896332, 017485962546<br/> 016457896333</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+      <Info />
 
-    <div class="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14600.157880481716!2d90.35107202273903!3d23.81719545680701!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c12c1b289e39%3A0x8d3bdfb80d3ebe88!2sRd%20No.%204%2C%20Dhaka%201216!5e0!3m2!1sen!2sbd!4v1701837409513!5m2!1sen!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-
-    
-    <div class="si__contact__area section-space">
-        <div class="container custom-width-2">
-            <div class="row si__contact__bg">
-                <div class="col-lg-12">
-                    <div class="si__contact__text text-center">
-                        <h1>Write here below?</h1>
-                        <p>For your car we will do everything  advice, repairs and they can<br/> maintenance. We are the some preferred choice </p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="si__contact__info text-center">
-                            <input type="text" placeholder="Your Name..." required/>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="si__contact__info text-center">
-                            <input type="text" placeholder="Your Email" required/>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="si__contact__info text-center">
-                            <input type="text" placeholder="Your phone" required/>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="si__contact__info text-center">
-                            <div class="room-seclect">
-                                <form>
-                                    <select id="nice" class="nice-2">
-                                        <option>Choose Option</option>
-                                        <option>City Room</option>
-                                        <option>City Room</option>
-                                        <option>City Room</option>
-                                    </select>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-12">
-                        <div class="si__contact__info">
-                            <textarea placeholder="Your Message" name="text" id="text"></textarea>
-                        </div>
-                    </div>
-                    <div class="col-lg-12">
-                        <div class="si__contact__info text-center">
-                        <a class="room__btn2" href="room.html"> Submit Now <svg width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M13.6875 7.71875L8.6875 12.7188C8.5 12.9062 8.25 13 8 13C7.71875 13 7.46875 12.9062 7.28125 12.7188C6.875 12.3438 6.875 11.6875 7.28125 11.3125L10.5625 8H1C0.4375 8 0 7.5625 0 7C0 6.46875 0.4375 6 1 6H10.5625L7.28125 2.71875C6.875 2.34375 6.875 1.6875 7.28125 1.3125C7.65625 0.90625 8.3125 0.90625 8.6875 1.3125L13.6875 6.3125C14.0938 6.6875 14.0938 7.34375 13.6875 7.71875Z" fill="white"/>
-                            </svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+      {/* Contact Form */}
+      <div className="si__contact__area section-space">
+        <div className="container custom-width-2">
+          <div className="row si__contact__bg">
+            <div className="col-lg-12">
+              <div className="si__contact__text text-center">
+                <h1>Write here below?</h1>
+                <p>
+                  For your car we will do everything advice, repairs and they
+                  can
+                  <br /> maintenance. We are the some preferred choice
+                </p>
+              </div>
             </div>
+
+            <form className="row" onSubmit={handleSubmit}>
+              <div className="col-lg-6">
+                <div className="si__contact__info text-center">
+                  <input
+                    type="text"
+                    name="name"
+                    placeholder="Your Name..."
+                    required
+                    value={formData.name}
+                    onChange={handleChange}
+                  />
+                </div>
+              </div>
+              <div className="col-lg-6">
+                <div className="si__contact__info text-center">
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="Your Email"
+                    required
+                    value={formData.email}
+                    onChange={handleChange}
+                  />
+                </div>
+              </div>
+              <div className="col-lg-6">
+                <div className="si__contact__info text-center">
+                  <input
+                    type="text"
+                    name="phone"
+                    placeholder="Your Phone"
+                    required
+                    value={formData.phone}
+                    onChange={handleChange}
+                  />
+                </div>
+              </div>
+              <div className="col-lg-12">
+                <div className="si__contact__info">
+                  <textarea
+                    name="message"
+                    placeholder="Your Message"
+                    required
+                    value={formData.message}
+                    onChange={handleChange}
+                  ></textarea>
+                </div>
+              </div>
+              <div className="col-lg-12 text-center">
+                <button type="submit" className="room__btn2">
+                  Submit Now
+                </button>
+              </div>
+            </form>
+          </div>
         </div>
-    </div>
+      </div>
+
+      <ToastContainer />
     </>
-  )
-}
+  );
+};
 
-export default Contact
+export default Contact;
