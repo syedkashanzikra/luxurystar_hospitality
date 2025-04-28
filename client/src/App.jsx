@@ -9,9 +9,10 @@ import Event from "./components/Event";
 import Restaurant from "./components/Restaurant";
 import RoomDetails from "./components/Room-Details";
 import Room from "./components/Room";
-import NotFound from "./components/NotFound"; // Assuming NotFound.jsx bana liya tu ne
-
+import Login from "./components/Login";
+import NotFound from "./components/NotFound";
 import "./App.css";
+import Signup from "./components/Signup";
 
 function App() {
   return (
@@ -27,6 +28,8 @@ function App() {
         <Route path="/restaurant" element={<Restaurant />} />
         <Route path="/room-details" element={<RoomDetails />} />
         <Route path="/room" element={<Room />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
 
         {/* 404 Page */}
         <Route path="*" element={<NotFound />} />
