@@ -2,18 +2,10 @@ import React from 'react'
 
 const AdminHeader = () => {
   return (
-    <div>
-    <link rel="stylesheet" href="admin/assets/plugins/bootstrap/css/bootstrap.min.css"/>
-<link rel="stylesheet" href="admin/assets/plugins/morrisjs/morris.css" />
-<link rel="stylesheet" href="admin/assets/plugins/jvectormap/jquery-jvectormap-2.0.3.min.css"/>
-
-<link rel="stylesheet" href="admin/assets/css/main.css"/>
-<link rel="stylesheet" href="admin/assets/css/color_skins.css"></link>
-
-
-<div class="page-loader-wrapper">
+  <>
+ <div class="page-loader-wrapper">
     <div class="loader">
-        <div class="m-t-30"><img src="assets/images/logo.svg" width="48" height="48" alt="Alpino"></div>
+        <div class="m-t-30"><img src="admin/assets/images/logo.svg" width="48" height="48" alt="Alpino" /></div>
         <p>Please wait...</p>        
     </div>
 </div>
@@ -24,7 +16,7 @@ const AdminHeader = () => {
             <div class="card">
                 <div class="body">
                     <div class="input-group m-b-0">                
-                        <input type="text" class="form-control" placeholder="Search...">
+                        <input type="text" class="form-control" placeholder="Search..."/>
                         <span class="input-group-addon">
                             <i class="zmdi zmdi-search"></i>
                         </span>
@@ -59,12 +51,11 @@ const AdminHeader = () => {
                         <div class="col-lg-3 col-md-6 col-sm-12">
                             <h6>Sample Pages</h6>
                             <ul class="list-unstyled">                            
-                                <li><a href="image-gallery.html">Image Gallery</a></li>
+                                <li><a href="image-gallery.html">Image Gallery</a> </li>
                                 <li><a href="profile.html">Profile</a></li>
                                 <li><a href="timeline.html">Timeline</a></li>
                                 <li><a href="pricing.html">Pricing</a></li>
-                                <li><a href="invoices.html">Invoices</a></li>
-                                <li><a href="faqs.html">FAQs</a></li>
+                                <li><a href="invoices.html">Invoices</a></li>                         <li><a href="faqs.html">FAQs</a></li>
                                 <li><a href="search-results.html">Search Results</a></li>
                             </ul>
                         </div>
@@ -89,53 +80,13 @@ const AdminHeader = () => {
                     <a class="icon" href="https://www.behance.net/thememakker" target="_blank"><i class="zmdi zmdi-behance"></i></a>
                     <a class="icon" href="javascript:void(0);"><i class="zmdi zmdi-twitter"></i></a>
                     <a class="icon" href="javascript:void(0);"><i class="zmdi zmdi-linkedin"></i></a>                    
-                    <p>Coded by WrapTheme<br> Designed by <a href="http://thememakker.com/" target="_blank">thememakker.com</a></p>
+                    <p>Coded by WrapTheme<br/> Designed by <a href="http://thememakker.com/" target="_blank">thememakker.com</a></p>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<div class="overlay"></div><!-- Overlay For Sidebars -->
 
-<!-- Left Sidebar -->
-<aside id="minileftbar" class="minileftbar">
-    <ul class="menu_list">
-        <li>
-            <a href="javascript:void(0);" class="bars"></a>
-            <a class="navbar-brand" href="index.html"><img src="assets/images/logo.svg" alt="Alpino"></a>
-        </li>
-        <li><a href="javascript:void(0);" class="btn_overlay hidden-sm-down"><i class="zmdi zmdi-search"></i></a></li>        
-        <li><a href="javascript:void(0);" class="menu-sm"><i class="zmdi zmdi-swap"></i></a></li>        
-        <li class="menuapp-btn"><a href="javascript:void(0);"><i class="zmdi zmdi-apps"></i></a></li>
-        <li class="notifications badgebit">
-            <a href="javascript:void(0);">
-                <i class="zmdi zmdi-notifications"></i>
-                <div class="notify">
-                    <span class="heartbit"></span>
-                    <span class="point"></span>
-                </div>
-            </a>
-        </li>
-        <li class="task badgebit">
-            <a href="javascript:void(0);">
-                <i class="zmdi zmdi-flag"></i>
-                <div class="notify">
-                    <span class="heartbit"></span>
-                    <span class="point"></span>
-                </div>
-            </a>
-        </li>
-        <li><a href="events.html" title="Events"><i class="zmdi zmdi-calendar"></i></a></li>
-        <li><a href="mail-inbox.html" title="Inbox"><i class="zmdi zmdi-email"></i></a></li>
-        <li><a href="contact.html" title="Contact List"><i class="zmdi zmdi-account-box-phone"></i></a></li>        
-        <li><a href="chat.html"><i class="zmdi zmdi-comments"></i></a></li>        
-        <li><a href="javascript:void(0);" class="fullscreen" data-provide="fullscreen"><i class="zmdi zmdi-fullscreen"></i></a></li>
-        <li class="power">
-            <a href="javascript:void(0);" class="js-right-sidebar"><i class="zmdi zmdi-settings zmdi-hc-spin"></i></a>            
-            <a href="sign-in.html" class="mega-menu"><i class="zmdi zmdi-power"></i></a>
-        </li>
-    </ul>    
-</aside>
 
 <aside class="right_menu">
     <div class="menu-app">
@@ -167,7 +118,7 @@ const AdminHeader = () => {
                         <li>
                             <a href="javascript:void(0);">
                                 <div class="media">
-                                    <img class="media-object rounded-circle" src="assets/images/xs/avatar1.jpg" alt="">
+                                    <img class="media-object rounded-circle" src="admin/assets/images/xs/avatar1.jpg" alt="" />
                                     <div class="media-body">
                                         <span class="name">Alexander <small class="time">35min ago</small></span>
                                         <p class="message">New tasks needs to be done</p>                                        
@@ -178,7 +129,7 @@ const AdminHeader = () => {
                         <li>
                             <a href="javascript:void(0);">
                                 <div class="media">
-                                    <img class="media-object rounded-circle" src="assets/images/xs/avatar2.jpg" alt="">
+                                    <img class="media-object rounded-circle" src="admin/assets/images/xs/avatar2.jpg" alt="" />
                                     <div class="media-body">
                                         <span class="name">Grayson <small class="time">1hr ago</small></span>
                                         <p class="message">New tasks needs to be done</p>                                        
@@ -189,7 +140,7 @@ const AdminHeader = () => {
                         <li>
                             <a href="javascript:void(0);">
                                 <div class="media">
-                                    <img class="media-object rounded-circle" src="assets/images/xs/avatar3.jpg" alt="">
+                                    <img class="media-object rounded-circle" src="admin/assets/images/xs/avatar3.jpg" alt="" />
                                     <div class="media-body">
                                         <span class="name">Sophia <small class="time">31min ago</small></span>
                                         <p class="message">New tasks needs to be done</p>                                        
@@ -251,13 +202,13 @@ const AdminHeader = () => {
                     <a href="javascript:void(0);">
                         <span class="text-muted">Project Name 1 <span class="float-right">29%</span></span>
                         <div class="progress">
-                            <div class="progress-bar l-turquoise" role="progressbar" aria-valuenow="29" aria-valuemin="0" aria-valuemax="100" style="width: 29%;"></div>
+                            <div class="progress-bar l-turquoise" role="progressbar" aria-valuenow="29" aria-valuemin="0" aria-valuemax="100" ></div>
                         </div>
                         <ul class="list-unstyled team-info">
                             <li class="m-r-15"><small class="text-muted">Team</small></li>
-                            <li><img src="assets/images/xs/avatar2.jpg" alt="Avatar"></li>
-                            <li><img src="assets/images/xs/avatar3.jpg" alt="Avatar"></li>
-                            <li><img src="assets/images/xs/avatar4.jpg" alt="Avatar"></li>
+                            <li><img src="admin/assets/images/xs/avatar2.jpg" alt="Avatar" /></li>
+                            <li><img src="admin/assets/images/xs/avatar3.jpg" alt="Avatar" /></li>
+                            <li><img src="admin/assets/images/xs/avatar4.jpg" alt="Avatar" /></li>
                         </ul>
                     </a>
                 </div>
@@ -265,12 +216,12 @@ const AdminHeader = () => {
                     <a href="javascript:void(0);">
                         <span class="text-muted">Project Name 2 <span class="float-right">78%</span></span>
                         <div class="progress">
-                            <div class="progress-bar l-slategray" role="progressbar" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100" style="width: 78%;"></div>
+                            <div class="progress-bar l-slategray" role="progressbar" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100" ></div>
                         </div>
                         <ul class="list-unstyled team-info">
                             <li class="m-r-15"><small class="text-muted">Team</small></li>
-                            <li><img src="assets/images/xs/avatar6.jpg" alt="Avatar"></li>
-                            <li><img src="assets/images/xs/avatar7.jpg" alt="Avatar"></li>
+                            <li><img src="admin/assets/images/xs/avatar6.jpg" alt="Avatar" /></li>
+                            <li><img src="admin/assets/images/xs/avatar7.jpg" alt="Avatar" /></li>
                         </ul>
                     </a>
                 </div>
@@ -278,12 +229,12 @@ const AdminHeader = () => {
                     <a href="javascript:void(0);">
                         <span class="text-muted">Project Name 4 <span class="float-right">68%</span></span>
                         <div class="progress">
-                            <div class="progress-bar l-coral" role="progressbar" aria-valuenow="68" aria-valuemin="0" aria-valuemax="100" style="width: 68%;"></div>
+                            <div class="progress-bar l-coral" role="progressbar" aria-valuenow="68" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                         <ul class="list-unstyled team-info">
                             <li class="m-r-15"><small class="text-muted">Team</small></li>
-                            <li><img src="assets/images/xs/avatar8.jpg" alt="Avatar"></li>
-                            <li><img src="assets/images/xs/avatar9.jpg" alt="Avatar"></li>
+                            <li><img src="admin/assets/images/xs/avatar8.jpg" alt="Avatar" /></li>
+                            <li><img src="admin/assets/images/xs/avatar9.jpg" alt="Avatar" /></li>
                         </ul>
                     </a>
                 </div>
@@ -292,8 +243,8 @@ const AdminHeader = () => {
     </div>
     <div id="rightsidebar" class="right-sidebar">
         <ul class="nav nav-tabs">
-            <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="index.html#setting">Setting</a></li>        
-            <li class="nav-item"><a class="nav-link" data-toggle="tab" href="index.html#activity">Activity</a></li>
+            <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="flot.html#setting">Setting</a></li>        
+            <li class="nav-item"><a class="nav-link" data-toggle="tab" href="flot.html#activity">Activity</a></li>
         </ul>
         <div class="tab-content slim_scroll">
             <div class="tab-pane slideRight active" id="setting">
@@ -335,37 +286,37 @@ const AdminHeader = () => {
                         <ul class="setting-list list-unstyled m-b-0">
                             <li>
                                 <div class="checkbox">
-                                    <input id="checkbox1" type="checkbox">
+                                    <input id="checkbox1" type="checkbox" />
                                     <label for="checkbox1">Report Panel Usage</label>
                                 </div>
                             </li>
                             <li>
                                 <div class="checkbox">
-                                    <input id="checkbox2" type="checkbox" checked="">
+                                    <input id="checkbox2" type="checkbox"  checked=""/>
                                     <label for="checkbox2">Email Redirect</label>
                                 </div>
                             </li>
                             <li>
                                 <div class="checkbox">
-                                    <input id="checkbox3" type="checkbox">
+                                    <input id="checkbox3" type="checkbox" />
                                     <label for="checkbox3">Notifications</label>
                                 </div>                        
                             </li>
                             <li>
                                 <div class="checkbox">
-                                    <input id="checkbox4" type="checkbox">
+                                    <input id="checkbox4" type="checkbox" />
                                     <label for="checkbox4">Auto Updates</label>
                                 </div>
                             </li>
                             <li>
                                 <div class="checkbox">
-                                    <input id="checkbox5" type="checkbox" checked="">
+                                    <input id="checkbox5" type="checkbox"  checked=""/>
                                     <label for="checkbox5">Offline</label>
                                 </div>
                             </li>
                             <li>
                                 <div class="checkbox m-b-0">
-                                    <input id="checkbox6" type="checkbox">
+                                    <input id="checkbox6" type="checkbox" />
                                     <label for="checkbox6">Location Permission</label>
                                 </div>
                             </li>
@@ -391,67 +342,67 @@ const AdminHeader = () => {
                             <div class="sl-item">
                                 <div class="sl-content">
                                     <div class="text-muted">Just now</div>
-                                    <p>Finished task <a href="index.html" class="text-info">#features 4</a>.</p>
+                                    <p>Finished task <a href="flot.html" class="text-info">#features 4</a>.</p>
                                 </div>
                             </div>
                             <div class="sl-item b-info">
                                 <div class="sl-content">
                                     <div class="text-muted">10:30</div>
-                                    <p><a href="index.html">@Jessi</a> retwit your post</p>
+                                    <p><a href="flot.html">@Jessi</a> retwit your post</p>
                                 </div>
                             </div>
                             <div class="sl-item b-primary">
                                 <div class="sl-content">
                                     <div class="text-muted">12:30</div>
-                                    <p>Call to customer <a href="index.html" class="text-info">Jacob</a> and discuss the detail.</p>
+                                    <p>Call to customer <a href="flot.html" class="text-info">Jacob</a> and discuss the detail.</p>
                                 </div>
                             </div>
                             <div class="sl-item b-warning">
                                 <div class="sl-content">
                                     <div class="text-muted">1 days ago</div>
-                                    <p><a href="index.html" class="text-info">Jessi</a> commented your post.</p>
+                                    <p><a href="flot.html" class="text-info">Jessi</a> commented your post.</p>
                                 </div>
                             </div>
                             <div class="sl-item b-primary">
                                 <div class="sl-content">
                                     <div class="text-muted">2 days ago</div>
-                                    <p>Call to customer <a href="index.html" class="text-info">Jacob</a> and discuss the detail.</p>
+                                    <p>Call to customer <a href="flot.html" class="text-info">Jacob</a> and discuss the detail.</p>
                                 </div>
                             </div>
                             <div class="sl-item b-primary">
                                 <div class="sl-content">
                                     <div class="text-muted">3 days ago</div>
-                                    <p>Call to customer <a href="index.html" class="text-info">Jacob</a> and discuss the detail.</p>
+                                    <p>Call to customer <a href="flot.html" class="text-info">Jacob</a> and discuss the detail.</p>
                                 </div>
                             </div>
                             <div class="sl-item b-warning">
                                 <div class="sl-content">
                                     <div class="text-muted">4 Week ago</div>
-                                    <p><a href="index.html" class="text-info">Jessi</a> commented your post.</p>
+                                    <p><a href="flot.html" class="text-info">Jessi</a> commented your post.</p>
                                 </div>
                             </div>
                             <div class="sl-item b-warning">
                                 <div class="sl-content">
                                     <div class="text-muted">5 days ago</div>
-                                    <p><a href="index.html" class="text-info">Jessi</a> commented your post.</p>
+                                    <p><a href="flot.html" class="text-info">Jessi</a> commented your post.</p>
                                 </div>
                             </div>
                             <div class="sl-item b-primary">
                                 <div class="sl-content">
                                     <div class="text-muted">5 Week ago</div>
-                                    <p>Call to customer <a href="index.html" class="text-info">Jacob</a> and discuss the detail.</p>
+                                    <p>Call to customer <a href="flot.html" class="text-info">Jacob</a> and discuss the detail.</p>
                                 </div>
                             </div>
                             <div class="sl-item b-primary">
                                 <div class="sl-content">
                                     <div class="text-muted">3 Week ago</div>
-                                    <p>Call to customer <a href="index.html" class="text-info">Jacob</a> and discuss the detail.</p>
+                                    <p>Call to customer <a href="flot.html" class="text-info">Jacob</a> and discuss the detail.</p>
                                 </div>
                             </div>
                             <div class="sl-item b-warning">
                                 <div class="sl-content">
                                     <div class="text-muted">1 Month ago</div>
-                                    <p><a href="index.html" class="text-info">Jessi</a> commented your post.</p>
+                                    <p><a href="flot.html" class="text-info">Jessi</a> commented your post.</p>
                                 </div>
                             </div>
                         </div>
@@ -466,7 +417,7 @@ const AdminHeader = () => {
                 <li>
                     <div class="user-info m-b-20">
                         <div class="image">
-                            <a href="profile.html"><img src="assets/images/profile_av.jpg" alt="User"></a>
+                            <a href="profile.html"><img src="admin/assets/images/profile_av.jpg" alt="User"/></a>
                         </div>
                         <div class="detail">
                             <h6>Michael</h6>
@@ -479,7 +430,7 @@ const AdminHeader = () => {
                     </div>
                 </li>
                 <li class="header">MAIN</li>
-                <li class="active open"> <a href="index.html"><i class="zmdi zmdi-home"></i><span>Dashboard</span></a></li>
+                <li> <a href="index.html"><i class="zmdi zmdi-home"></i><span>Dashboard</span></a></li>
                 <li><a href="javascript:void(0);" class="menu-toggle"><i class="zmdi zmdi-apps"></i><span>App</span> <span class="badge badge-success float-right">7</span></a>
                     <ul class="ml-menu">
                         <li><a href="mail-inbox.html">Inbox</a></li>
@@ -534,10 +485,10 @@ const AdminHeader = () => {
 						<li><a href="table-filter.html">Tables Filter</a></li>
                     </ul>
                 </li>            
-                <li><a href="javascript:void(0);" class="menu-toggle"><i class="zmdi zmdi-chart"></i><span>Charts</span> <span class="badge badge-default float-right">6</span></a>
+                <li class="active open"><a href="javascript:void(0);" class="menu-toggle"><i class="zmdi zmdi-chart"></i><span>Charts</span> <span class="badge badge-default float-right">6</span></a>
                     <ul class="ml-menu">
                         <li><a href="morris.html">Morris</a></li>
-                        <li><a href="flot.html">Flot</a></li>
+                        <li class="active"><a href="flot.html">Flot</a></li>
                         <li><a href="chartjs.html">ChartJS</a></li>
                         <li><a href="sparkline.html">Sparkline</a></li>
                         <li><a href="jquery-knob.html">Jquery Knob</a></li>
@@ -546,8 +497,7 @@ const AdminHeader = () => {
                 </li>
                 <li class="header">EXTRA COMPONENTS</li>                    
                 <li><a href="javascript:void(0);" class="menu-toggle"><i class="zmdi zmdi-delicious"></i><span>Widgets</span> <span class="badge badge-default float-right">3</span></a>
-                    <ul class="ml-menu">
-                    	<li><a href="widgets-app.html">Apps Widgetse</a></li>
+                    <ul class="ml-menu"><li><a href="widgets-app.html">Apps Widgetse</a></li>
                         <li><a href="widgets-data.html">Data Widgetse</a></li>
                         <li><a href="widgets-chart.html">Chart Widgetse</a></li>
                     </ul>
@@ -591,8 +541,8 @@ const AdminHeader = () => {
             </ul>
         </div>
     </div>
-</aside>
-    </div>
+</aside> 
+  </>
   )
 }
 

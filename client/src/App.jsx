@@ -11,6 +11,7 @@ import Login from "./components/Login";
 import NotFound from "./components/NotFound";
 import "./App.css";
 import Signup from "./components/Signup";
+import AdminScreen from "./admin/adminindex";
 
 function App() {
   return (
@@ -29,6 +30,10 @@ function App() {
 
         {/* 404 Page */}
         <Route path="*" element={<NotFound />} />
+
+
+        <Route path="/admin" element={<AdminScreen />} />
+
       </Routes>
     </Router>
   );
