@@ -9,7 +9,7 @@ export const Footer = () => {
             <div class="footer2__top d-flex justify-content-between pt-80 pb-30">
                 <div class="footer__logo wow fadeInLeft animated" data-wow-delay=".2s">
                     <a href="index.html">
-                        <img src="assets/imgs/logo/logo-3.svg" alt="logo not found"/>
+                        <img src="template/assets/imgs/logo/logo-3.svg" alt="logo not found"/>
                     </a>
                 </div>
                 <div class="footer2__right d-flex wow fadeInLeft animated" data-wow-delay=".3s">

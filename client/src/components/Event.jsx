@@ -1,11 +1,15 @@
 import React from 'react'
+import Header from './Header.jsx';
+import Footer from './Footer.jsx'
+
 
 const Event = () => {
   return (
     <>
-       <div class="breadcrumb__area dark-green breadcrumb-space overflow-hidden position-relative z-1" data-background="assets/imgs/breadcrumb/breadcrumb.png">
+     <Header />
+       <div class="breadcrumb__area dark-green breadcrumb-space overflow-hidden position-relative z-1" data-background="template/assets/imgs/breadcrumb/breadcrumb.png">
         <div class="breadcrumb__shapes">
-            <img class="upDown" src="assets/imgs/breadcrumb/shape.png" alt="img not found"/>
+            <img class="upDown" src="template/assets/imgs/breadcrumb/shape.png" alt="img not found"/>
         </div>
         <div class="container">
             <div class="row align-items-center justify-content-between">
@@ -54,7 +58,7 @@ const Event = () => {
                 </div>
                 <div class="col-lg-5 col-md-6">
                     <div class="event__thumb">
-                        <img src="assets/imgs/inner-page-img/event-img-1.png" alt="img not found"/>
+                        <img src="template/assets/imgs/inner-page-img/event-img-1.png" alt="img not found"/>
                     </div>
                 </div>
             </div>
@@ -87,7 +91,7 @@ const Event = () => {
                 </div>
                 <div class="col-lg-5 col-md-6">
                     <div class="event__thumb">
-                        <img src="assets/imgs/inner-page-img/event-img-2.png" alt="img not found"/>
+                        <img src="template/assets/imgs/inner-page-img/event-img-2.png" alt="img not found"/>
                     </div>
                 </div>
             </div>
@@ -214,6 +218,7 @@ const Event = () => {
             </div>
         </div>
     </section>
+    <Footer />
     </>
   )
 }

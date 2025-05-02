@@ -1,11 +1,14 @@
 import React from 'react'
+import Header from './Header.jsx';
+import Footer from './Footer.jsx';
 
 const Room = () => {
   return (
     <>
-      <div class="breadcrumb__area dark-green breadcrumb-space overflow-hidden position-relative z-1" data-background="assets/imgs/breadcrumb/breadcrumb.png">
+     <Header />
+      <div class="breadcrumb__area dark-green breadcrumb-space overflow-hidden position-relative z-1" data-background="template/assets/imgs/breadcrumb/breadcrumb.png">
         <div class="breadcrumb__shapes">
-            <img class="upDown" src="assets/imgs/breadcrumb/shape.png" alt="img not found"/>
+            <img class="upDown" src="template/assets/imgs/breadcrumb/shape.png" alt="img not found"/>
         </div>
         <div class="container">
             <div class="row align-items-center justify-content-between">
@@ -142,7 +145,7 @@ const Room = () => {
                 <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
                     <div class="room__item mb-30">
                         <div class="room__thumb">
-                            <img src="assets/imgs/inner-page-img/room-1.png" alt="img not found"/>
+                            <img src="template/assets/imgs/inner-page-img/room-1.png" alt="img not found"/>
                         </div>
                         <div class="room__content">
                             <div class="room__content-box mb-20">
@@ -185,7 +188,7 @@ const Room = () => {
                 <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
                     <div class="room__item mb-30">
                         <div class="room__thumb">
-                            <img src="assets/imgs/inner-page-img/room-2.png" alt="img not found"/>
+                            <img src="template/assets/imgs/inner-page-img/room-2.png" alt="img not found"/>
                         </div>
                         <div class="room__content">
                             <div class="room__content-box mb-20">
@@ -228,7 +231,7 @@ const Room = () => {
                 <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
                     <div class="room__item mb-30">
                         <div class="room__thumb">
-                            <img src="assets/imgs/inner-page-img/room-3.png" alt="img not found"/>
+                            <img src="template/assets/imgs/inner-page-img/room-3.png" alt="img not found"/>
                         </div>
                         <div class="room__content">
                             <div class="room__content-box mb-20">
@@ -271,7 +274,7 @@ const Room = () => {
                 <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
                     <div class="room__item mb-30">
                         <div class="room__thumb">
-                            <img src="assets/imgs/inner-page-img/room-4.png" alt="img not found"/>
+                            <img src="template/assets/imgs/inner-page-img/room-4.png" alt="img not found"/>
                         </div>
                         <div class="room__content">
                             <div class="room__content-box mb-20">
@@ -314,7 +317,7 @@ const Room = () => {
                 <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
                     <div class="room__item mb-30">
                         <div class="room__thumb">
-                            <img src="assets/imgs/inner-page-img/room-5.png" alt="img not found"/>
+                            <img src="template/assets/imgs/inner-page-img/room-5.png" alt="img not found"/>
                         </div>
                         <div class="room__content">
                             <div class="room__content-box mb-20">
@@ -357,7 +360,7 @@ const Room = () => {
                 <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
                     <div class="room__item mb-30">
                         <div class="room__thumb">
-                            <img src="assets/imgs/inner-page-img/room-6.png" alt="img not found"/>
+                            <img src="template/assets/imgs/inner-page-img/room-6.png" alt="img not found"/>
                         </div>
                         <div class="room__content">
                             <div class="room__content-box mb-20">
@@ -400,6 +403,7 @@ const Room = () => {
             </div>
         </div>
     </section>
+    <Footer />
     </>
   )
 }

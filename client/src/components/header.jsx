@@ -13,7 +13,7 @@ const Header = () => {
                   <div className="header__logo">
                     <Link to="/">
                       <div className="logo">
-                        <img src="/assets/imgs/logo/logo.svg" alt="logo not found" />
+                        <img src="/template/assets/imgs/logo/logo.svg" alt="logo not found" />
                       </div>
                     </Link>
                   </div>
@@ -53,6 +53,9 @@ const Header = () => {
                           <li>
                             <Link to="/contact">Contact Us</Link>
                           </li>
+                          <li>
+                            <Link to="/login">Login/Signup</Link>
+                          </li>
                         </ul>
                       </nav>
                     </div>
@@ -67,6 +70,7 @@ const Header = () => {
                         Book Now <i className="fa-solid fa-plus"></i>
                       </Link>
                     </div>
+                    
                     <div className="header__hamburger ml-20 d-xl-none">
                       <div className="sidebar__toggle">
                         <button className="bar-icon">

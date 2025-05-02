@@ -1,11 +1,14 @@
 import React from 'react'
+import Header from './Header.jsx';
+import Footer from './Footer.jsx'
 
 const Restaurant = () => {
   return (
     <>
-     <div class="breadcrumb__area dark-green breadcrumb-space overflow-hidden position-relative z-1" data-background="assets/imgs/breadcrumb/breadcrumb.png">
+     <Header />
+     <div class="breadcrumb__area dark-green breadcrumb-space overflow-hidden position-relative z-1" data-background="template/assets/imgs/breadcrumb/breadcrumb.png">
         <div class="breadcrumb__shapes">
-            <img class="upDown" src="assets/imgs/breadcrumb/shape.png" alt="img not found"/>
+            <img class="upDown" src="template/assets/imgs/breadcrumb/shape.png" alt="img not found"/>
         </div>
         <div class="container">
             <div class="row align-items-center justify-content-between">
@@ -32,7 +35,7 @@ const Restaurant = () => {
             <div class="row align-items-center bg-gray-2">
                 <div class="col-lg-5 p-0">
                     <div class="resturent__thumb">
-                        <img src="assets/imgs/inner-page-img/resturent-img-1.png" alt="img not found"/>
+                        <img src="template/assets/imgs/inner-page-img/resturent-img-1.png" alt="img not found"/>
                     </div>
                 </div>
                 <div class="col-lg-7 p-0">
@@ -86,7 +89,7 @@ const Restaurant = () => {
                                     <div class="resturent__item-slide-inner">
                                         <div class="resturent__item-media">
                                             <a href="blog-details.html">
-                                                <img src="assets/imgs/inner-page-img/resturent-img-2.png" alt="img not found"/>
+                                                <img src="template/assets/imgs/inner-page-img/resturent-img-2.png" alt="img not found"/>
                                             </a>
                                         </div>
                                     </div>
@@ -94,35 +97,35 @@ const Restaurant = () => {
                                 <div class="swiper-slide resturent__item-slide pb-30">
                                     <div class="resturent__item-media">
                                         <a href="blog-details.html">
-                                            <img src="assets/imgs/inner-page-img/resturent-img-3.png" alt="img not found"/>
+                                            <img src="template/assets/imgs/inner-page-img/resturent-img-3.png" alt="img not found"/>
                                         </a>
                                     </div>
                                 </div>
                                 <div class="swiper-slide resturent__item-slide pb-30">
                                     <div class="resturent__item-media">
                                         <a href="blog-details.html">
-                                            <img src="assets/imgs/inner-page-img/resturent-img-4.png" alt="img not found"/>
+                                            <img src="template/assets/imgs/inner-page-img/resturent-img-4.png" alt="img not found"/>
                                         </a>
                                     </div>
                                 </div>
                                 <div class="swiper-slide resturent__item-slide pb-30">
                                     <div class="resturent__item-media">
                                         <a href="blog-details.html">
-                                            <img src="assets/imgs/inner-page-img/resturent-img-2.png" alt="img not found"/>
+                                            <img src="template/assets/imgs/inner-page-img/resturent-img-2.png" alt="img not found"/>
                                         </a>
                                     </div>
                                 </div>
                                 <div class="swiper-slide resturent__item-slide pb-30">
                                     <div class="resturent__item-media">
                                         <a href="blog-details.html">
-                                            <img src="assets/imgs/inner-page-img/resturent-img-3.png" alt="img not found"/>
+                                            <img src="template/assets/imgs/inner-page-img/resturent-img-3.png" alt="img not found"/>
                                         </a>
                                     </div>
                                 </div>
                                 <div class="swiper-slide resturent__item-slide pb-30">
                                     <div class="resturent__item-media">
                                         <a href="blog-details.html">
-                                            <img src="assets/imgs/inner-page-img/resturent-img-2.png" alt="img not found"/>
+                                            <img src="template/assets/imgs/inner-page-img/resturent-img-2.png" alt="img not found"/>
                                         </a>
                                     </div>
                                 </div>
@@ -144,7 +147,7 @@ const Restaurant = () => {
                 <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
                     <div class="selling__item mb-30">
                         <div class="selling__item-thumb">
-                            <img src="assets/imgs/inner-page-img/selling-img-1.png" alt="img not found"/>
+                            <img src="template/assets/imgs/inner-page-img/selling-img-1.png" alt="img not found"/>
                         </div>
                         <div class="selling__item-content">
                             <div class="selling__item-content-title-box">
@@ -198,7 +201,7 @@ const Restaurant = () => {
                 <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
                     <div class="selling__item mb-30">
                         <div class="selling__item-thumb">
-                            <img src="assets/imgs/inner-page-img/selling-img-2.png" alt="img not found"/>
+                            <img src="template/assets/imgs/inner-page-img/selling-img-2.png" alt="img not found"/>
                         </div>
                         <div class="selling__item-content">
                             <div class="selling__item-content-title-box">
@@ -252,7 +255,7 @@ const Restaurant = () => {
                 <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
                     <div class="selling__item mb-30">
                         <div class="selling__item-thumb">
-                            <img src="assets/imgs/inner-page-img/selling-img-3.png" alt="img not found"/>
+                            <img src="template/assets/imgs/inner-page-img/selling-img-3.png" alt="img not found"/>
                         </div>
                         <div class="selling__item-content">
                             <div class="selling__item-content-title-box">
@@ -306,6 +309,8 @@ const Restaurant = () => {
             </div>
         </div>
     </section> 
+    <Footer />
+
     </>
   )
 }

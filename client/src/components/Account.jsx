@@ -1,11 +1,14 @@
 import React from 'react'
+import Header from './Header.jsx';
+import Footer from './Footer.jsx'
 
 export const Account = () => {
   return (
     <>
-        <div class="breadcrumb__area dark-green breadcrumb-space overflow-hidden position-relative z-1" data-background="assets/imgs/breadcrumb/breadcrumb.png">
+     <Header />
+        <div class="breadcrumb__area dark-green breadcrumb-space overflow-hidden position-relative z-1" data-background="template/assets/imgs/breadcrumb/breadcrumb.png">
         <div class="breadcrumb__shapes">
-            <img class="upDown" src="assets/imgs/breadcrumb/shape.png" alt="img not found"/>
+            <img class="upDown" src="template/assets/imgs/breadcrumb/shape.png" alt="img not found"/>
         </div>
         <div class="container">
             <div class="row align-items-center justify-content-between">
@@ -58,7 +61,7 @@ export const Account = () => {
                 </div>
                 <div class="col-lg-5 col-md-6">
                     <div class="email__thumb">
-                        <img src="assets/imgs/inner-page-img/account-img-1.png" alt="img not found"/>
+                        <img src="template/assets/imgs/inner-page-img/account-img-1.png" alt="img not found"/>
                     </div>
                 </div>
             </div>
@@ -111,7 +114,7 @@ export const Account = () => {
 
     <section class="cta__area cta-2 p-relative overflow-hidden section-space-bottom">
         <div class="container">
-            <div class="cta__bg-img cta__bg-img-2 cta-2__bg-img-3" data-background="assets/imgs/inner-page-img/account-cta-img.png"></div>
+            <div class="cta__bg-img cta__bg-img-2 cta-2__bg-img-3" data-background="template/assets/imgs/inner-page-img/account-cta-img.png"></div>
             <div class="cta__content cta__content-2 cta-2__content-3 wow fade-in-bottom" data-wow-delay="300ms">
                 <a
                     class="video-popup video-btn"
@@ -124,6 +127,7 @@ export const Account = () => {
             </div>
         </div>
     </section>
+    <Footer />
     </>
   )
 }

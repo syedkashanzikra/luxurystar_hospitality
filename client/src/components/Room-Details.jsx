@@ -1,11 +1,14 @@
 import React from 'react'
+import Header from './Header.jsx';
+import Footer from './Footer.jsx'
 
 const Room_Details = () => {
   return (
     <>
-      <div class="breadcrumb__area dark-green breadcrumb-space overflow-hidden position-relative z-1" data-background="assets/imgs/breadcrumb/breadcrumb.png">
+     <Header />
+      <div class="breadcrumb__area dark-green breadcrumb-space overflow-hidden position-relative z-1" data-background="template/assets/imgs/breadcrumb/breadcrumb.png">
         <div class="breadcrumb__shapes">
-            <img class="upDown" src="assets/imgs/breadcrumb/shape.png" alt="img not found"/>
+            <img class="upDown" src="template/assets/imgs/breadcrumb/shape.png" alt="img not found"/>
         </div>
         <div class="container">
             <div class="row align-items-center justify-content-between">
@@ -34,7 +37,7 @@ const Room_Details = () => {
                 <div class="col-lg-8">
                     <div class="room-details__wrapper">
                         <div class="room-details__thumb">
-                            <img src="assets/imgs/inner-page-img/room-detils-img-1.png" alt="img not found"/>
+                            <img src="template/assets/imgs/inner-page-img/room-detils-img-1.png" alt="img not found"/>
                         </div>
                         <div class="room-details__star-wrap mt-30">
                             <div class="room-details__cat">
@@ -283,6 +286,8 @@ const Room_Details = () => {
             </div>
         </div>
     </section>
+    <Footer />
+
     </>
   )
 }

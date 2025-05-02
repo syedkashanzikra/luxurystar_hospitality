@@ -1,11 +1,14 @@
 import React from 'react'
+import Header from './Header.jsx';
+import Footer from './Footer.jsx'
 
 export const About = () => {
   return (
     <>
-        <div class="breadcrumb__area dark-green breadcrumb-space overflow-hidden position-relative z-1" data-background="assets/imgs/breadcrumb/breadcrumb.png">
+     <Header />
+        <div class="breadcrumb__area dark-green breadcrumb-space overflow-hidden position-relative z-1" data-background="template/assets/imgs/breadcrumb/breadcrumb.png">
         <div class="breadcrumb__shapes">
-            <img class="upDown" src="assets/imgs/breadcrumb/shape.png" alt="img not found"/>
+            <img class="upDown" src="template/assets/imgs/breadcrumb/shape.png" alt="img not found"/>
         </div>
         <div class="container">
             <div class="row align-items-center justify-content-between">
@@ -39,7 +42,7 @@ export const About = () => {
             <div class="row align-items-center">
                 <div class="col-md-6">
                     <div class="about__thumb">
-                        <img src="assets/imgs/about/about-right.png" alt="img not found"/>
+                        <img src="template/assets/imgs/about/about-right.png" alt="img not found"/>
                     </div>
                 </div>
                 <div class="col-md-6">
@@ -140,7 +143,7 @@ export const About = () => {
 
 
     <section class="cta__area cta-2__area p-relative overflow-hidden">
-        <div class="cta__bg-img cta__bg-img-2 cta__bg-img-3" data-background="./assets/imgs/cta/home-1-cta.png"></div>
+        <div class="cta__bg-img cta__bg-img-2 cta__bg-img-3" data-background="./template/assets/imgs/cta/home-1-cta.png"></div>
         <div class="cta__content cta__content-2 wow fade-in-bottom" data-wow-delay="300ms">
             <a
                 class="video-popup video-btn"
@@ -167,42 +170,42 @@ export const About = () => {
                 <div class="col-xl-4">
                     <div class="gallery__item mb-30">
                         <div class="gallery__thumb gallery__thumb-2">
-                            <img src="assets/imgs/gallery/img1.png" alt="img not found"/>
+                            <img src="template/assets/imgs/gallery/img1.png" alt="img not found"/>
                         </div>
                     </div>
                 </div>
                 <div class="col-xl-5">
                     <div class="gallery__item mb-30">
                         <div class="gallery__thumb">
-                            <img src="assets/imgs/gallery/img2.png" alt="img not found"/>
+                            <img src="template/assets/imgs/gallery/img2.png" alt="img not found"/>
                         </div>
                     </div>
                 </div>
                 <div class="col-xl-3">
                     <div class="gallery__item mb-30">
                         <div class="gallery__thumb">
-                            <img src="assets/imgs/gallery/img3.png" alt="img not found"/>
+                            <img src="template/assets/imgs/gallery/img3.png" alt="img not found"/>
                         </div>
                     </div>
                 </div>
                 <div class="col-xl-3">
                     <div class="gallery__item mb-30">
                         <div class="gallery__thumb">
-                            <img src="assets/imgs/gallery/img4.png" alt="img not found"/>
+                            <img src="template/assets/imgs/gallery/img4.png" alt="img not found"/>
                         </div>
                     </div>
                 </div>
                 <div class="col-xl-4">
                     <div class="gallery__item mb-30">
                         <div class="gallery__thumb">
-                            <img src="assets/imgs/gallery/img5.png" alt="img not found"/>
+                            <img src="template/assets/imgs/gallery/img5.png" alt="img not found"/>
                         </div>
                     </div>
                 </div>
                 <div class="col-xl-5">
                     <div class="gallery__item mb-30">
                         <div class="gallery__thumb">
-                            <img src="assets/imgs/gallery/img6.png" alt="img not found"/>
+                            <img src="template/assets/imgs/gallery/img6.png" alt="img not found"/>
                         </div>
                     </div>
                 </div>
@@ -222,7 +225,7 @@ export const About = () => {
             <div class="row align-items-center">
                 <div class="col-md-6">
                     <div class="our-service__thumb">
-                        <img src="assets/imgs/service/faq-right.png" alt="img not found"/>
+                        <img src="template/assets/imgs/service/faq-right.png" alt="img not found"/>
                     </div>
                 </div>
                 <div class="col-md-6">
@@ -313,6 +316,7 @@ export const About = () => {
             </div>
         </div>
     </section>
+    <Footer />
     </>
   )
 }

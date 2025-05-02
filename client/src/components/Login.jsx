@@ -3,6 +3,11 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { FaEye, FaEyeSlash } from "react-icons/fa"; // <<== ye import add kiya
 import Breadcrumb from "./subcomponents/Breadcrumb";
+import Header from './Header.jsx';
+import Footer from './Footer.jsx'
+import { Link } from 'react-router-dom';
+
+
 
 const Login = () => {
     const [showPassword, setShowPassword] = useState(false);
@@ -75,6 +80,7 @@ const Login = () => {
 
     return (
         <>
+         <Header />
             <Breadcrumb
                 title="Login"
                 paths={[
@@ -144,9 +150,9 @@ const Login = () => {
                             <div className="col-lg-12 text-center mt-3">
                                 <p style={{ fontSize: "1.5rem", color: "#555" }}>
                                     Don't have an account?{" "}
-                                    <a href="/signup" style={{ color: "#0ea5e9", textDecoration: "none", fontWeight: "bold" }}>
+                                    <Link to="/signup" style={{ color: "#0ea5e9", textDecoration: "none", fontWeight: "bold" }}>
                                         Sign up now
-                                    </a>
+                                    </Link>
                                 </p>
                             </div>
                         </form>
@@ -155,6 +161,8 @@ const Login = () => {
             </div>
 
             <ToastContainer />
+      <Footer />
+
         </>
     );
 };

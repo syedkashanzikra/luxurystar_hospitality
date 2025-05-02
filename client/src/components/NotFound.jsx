@@ -1,8 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Header from './Header.jsx';
+
 
 const NotFound = () => {
   return (
+    
     <div style={{
       minHeight: "100vh",
       background: "linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%)",
@@ -13,6 +16,7 @@ const NotFound = () => {
       padding: "20px",
       textAlign: "center"
     }}>
+
       <h1 style={{
         fontSize: "8rem",
         fontWeight: "bold",

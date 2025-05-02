@@ -3,6 +3,9 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 import Breadcrumb from "./subcomponents/Breadcrumb";
+import Header from './Header.jsx';
+import Footer from './Footer.jsx'
+import { Link } from 'react-router-dom';
 
 const Signup = () => {
 
@@ -78,6 +81,7 @@ const Signup = () => {
 
   return (
     <>
+     <Header />
       <Breadcrumb
         title="Signup"
         paths={[
@@ -171,12 +175,22 @@ const Signup = () => {
                   Create Account
                 </button>
               </div>
+              <div className="col-lg-12 text-center mt-3">
+                                <p style={{ fontSize: "1.5rem", color: "#555" }}>
+                                    Already have an account?{" "}
+                                    <Link to="/login" style={{ color: "#0ea5e9", textDecoration: "none", fontWeight: "bold" }}>
+                                        Login now
+                                    </Link>
+                                </p>
+                            </div>
             </form>
           </div>
         </div>
       </div>
 
       <ToastContainer />
+      <Footer />
+
     </>
   );
 };

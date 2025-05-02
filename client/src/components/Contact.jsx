@@ -4,6 +4,9 @@ import 'react-toastify/dist/ReactToastify.css';
 import Confetti from 'react-confetti';
 import Info from "./subcomponents/Info";
 import Breadcrumb from "./subcomponents/Breadcrumb";
+import Header from './Header.jsx';
+import Footer from './Footer.jsx'
+
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -103,6 +106,7 @@ const Contact = () => {
 
   return (
     <>
+     <Header />
       <Breadcrumb
         title="Contact Us"
         paths={[
@@ -187,6 +191,7 @@ const Contact = () => {
       </div>
 
       <ToastContainer />
+      <Footer />
     </>
   );
 };

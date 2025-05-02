@@ -1,6 +1,4 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
 import Index from "./components/Index";
 import About from "./components/About";
 import Account from "./components/Account";
@@ -17,8 +15,6 @@ import Signup from "./components/Signup";
 function App() {
   return (
     <Router>
-      <Header />
-
       <Routes>
         <Route path="/" element={<Index />} />
         <Route path="/about" element={<About />} />
@@ -34,8 +30,6 @@ function App() {
         {/* 404 Page */}
         <Route path="*" element={<NotFound />} />
       </Routes>
-
-      <Footer />
     </Router>
   );
 }

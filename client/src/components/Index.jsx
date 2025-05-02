@@ -1,8 +1,11 @@
 import React from 'react'
+import Header from './Header.jsx';
+import Footer from './Footer.jsx'
 
 export const Index = () => {
   return (
     <>
+     <Header />
         <section className="banner room__area">
         <div className="bg-color"></div>
         <div className="container">
@@ -95,10 +98,10 @@ export const Index = () => {
                                 </div>
                                 <div className="swiper-container gallery-thumbs">
                                     <div className="swiper-wrapper">
-                                        <div className="swiper-slide"><img src="assets/imgs/banner-1/slide-4.png" alt=""/></div>
-                                        <div className="swiper-slide"><img src="assets/imgs/banner-1/slide-3.png" alt=""/></div>
-                                        <div className="swiper-slide"><img src="assets/imgs/banner-1/slide-5.png" alt=""/></div>
-                                        <div className="swiper-slide"><img src="assets/imgs/banner-1/slide-4.png" alt=""/></div>
+                                        <div className="swiper-slide"><img src="template/assets/imgs/banner-1/slide-4.png" alt=""/></div>
+                                        <div className="swiper-slide"><img src="template/assets/imgs/banner-1/slide-3.png" alt=""/></div>
+                                        <div className="swiper-slide"><img src="template/assets/imgs/banner-1/slide-5.png" alt=""/></div>
+                                        <div className="swiper-slide"><img src="template/assets/imgs/banner-1/slide-4.png" alt=""/></div>
                                     </div>
                                 </div>
                             </div>
@@ -110,21 +113,21 @@ export const Index = () => {
                             <div className="swiper-slide">
                                 <div className="banner__item">
                                     <div className="banner__item-thumb">
-                                        <img src="assets/imgs/banner-1/slide-2.png" alt=" img not found"/>
+                                        <img src="template/assets/imgs/banner-1/slide-2.png" alt=" img not found"/>
                                     </div>
                                 </div>
                             </div>
                             <div className="swiper-slide">
                                 <div className="banner__item">
                                     <div className="banner__item-thumb">
-                                        <img src="assets/imgs/banner-1/slide-1.png" alt=" img not found"/>
+                                        <img src="template/assets/imgs/banner-1/slide-1.png" alt=" img not found"/>
                                     </div>
                                 </div>
                             </div>
                             <div className="swiper-slide">
                                 <div className="banner__item">
                                     <div className="banner__item-thumb">
-                                        <img src="assets/imgs/banner-1/slide.png" alt=" img not found"/>
+                                        <img src="template/assets/imgs/banner-1/slide.png" alt=" img not found"/>
                                     </div>
                                 </div>
                             </div>
@@ -163,28 +166,28 @@ export const Index = () => {
                                     <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6">
                                         <div className="hotel__item rr-pro-img mb-30">
                                             <div className="hotel__thumb fix p-relative">
-                                                <img  src="assets/imgs/home-1/room-img1.png"  alt="img not found"/>
+                                                <img  src="template/assets/imgs/home-1/room-img1.png"  alt="img not found"/>
                                             </div>
                                         </div>
                                     </div>
                                     <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6">
                                         <div className="hotel__item rr-pro-img mb-30">
                                             <div className="hotel__thumb fix p-relative">
-                                                <img  src="assets/imgs/home-1/room-img2.png"  alt="img not found"/>
+                                                <img  src="template/assets/imgs/home-1/room-img2.png"  alt="img not found"/>
                                             </div>
                                         </div>
                                     </div>
                                     <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6">
                                         <div className="hotel__item rr-pro-img mb-30">
                                             <div className="hotel__thumb fix p-relative">
-                                                <img  src="assets/imgs/home-1/room-img3.png"  alt="img not found"/>
+                                                <img  src="template/assets/imgs/home-1/room-img3.png"  alt="img not found"/>
                                             </div>
                                         </div>
                                     </div>
                                     <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6">
                                         <div className="hotel__item rr-pro-img mb-30">
                                             <div className="hotel__thumb fix p-relative">
-                                                <img  src="assets/imgs/home-1/room-img4.png"  alt="img not found"/>
+                                                <img  src="template/assets/imgs/home-1/room-img4.png"  alt="img not found"/>
                                             </div>
                                         </div>
                                     </div>
@@ -198,28 +201,28 @@ export const Index = () => {
                                     <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6">
                                         <div className="hotel__item rr-pro-img mb-30">
                                             <div className="hotel__thumb fix p-relative">
-                                                <img  src="assets/imgs/home-1/room-img4.png"  alt="img not found"/>
+                                                <img  src="template/assets/imgs/home-1/room-img4.png"  alt="img not found"/>
                                             </div>
                                         </div>
                                     </div>
                                     <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6">
                                         <div className="hotel__item rr-pro-img mb-30">
                                             <div className="hotel__thumb fix p-relative">
-                                                <img  src="assets/imgs/home-1/room-img3.png"  alt="img not found"/>
+                                                <img  src="template/assets/imgs/home-1/room-img3.png"  alt="img not found"/>
                                             </div>
                                         </div>
                                     </div>
                                     <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6">
                                         <div className="hotel__item rr-pro-img mb-30">
                                             <div className="hotel__thumb fix p-relative">
-                                                <img  src="assets/imgs/home-1/room-img2.png"  alt="img not found"/>
+                                                <img  src="template/assets/imgs/home-1/room-img2.png"  alt="img not found"/>
                                             </div>
                                         </div>
                                     </div>
                                     <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6">
                                         <div className="hotel__item rr-pro-img mb-30">
                                             <div className="hotel__thumb fix p-relative">
-                                                <img  src="assets/imgs/home-1/room-img1.png"  alt="img not found"/>
+                                                <img  src="template/assets/imgs/home-1/room-img1.png"  alt="img not found"/>
                                             </div>
                                         </div>
                                     </div>
@@ -233,28 +236,28 @@ export const Index = () => {
                                     <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6">
                                         <div className="hotel__item rr-pro-img mb-30">
                                             <div className="hotel__thumb fix p-relative">
-                                                <img  src="assets/imgs/home-1/room-img3.png"  alt="img not found"/>
+                                                <img  src="template/assets/imgs/home-1/room-img3.png"  alt="img not found"/>
                                             </div>
                                         </div>
                                     </div>
                                     <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6">
                                         <div className="hotel__item rr-pro-img mb-30">
                                             <div className="hotel__thumb fix p-relative">
-                                                <img  src="assets/imgs/home-1/room-img4.png"  alt="img not found"/>
+                                                <img  src="template/assets/imgs/home-1/room-img4.png"  alt="img not found"/>
                                             </div>
                                         </div>
                                     </div>
                                     <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6">
                                         <div className="hotel__item rr-pro-img mb-30">
                                             <div className="hotel__thumb fix p-relative">
-                                                <img  src="assets/imgs/home-1/room-img1.png"  alt="img not found"/>
+                                                <img  src="template/assets/imgs/home-1/room-img1.png"  alt="img not found"/>
                                             </div>
                                         </div>
                                     </div>
                                     <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6">
                                         <div className="hotel__item rr-pro-img mb-30">
                                             <div className="hotel__thumb fix p-relative">
-                                                <img  src="assets/imgs/home-1/room-img2.png"  alt="img not found"/>
+                                                <img  src="template/assets/imgs/home-1/room-img2.png"  alt="img not found"/>
                                             </div>
                                         </div>
                                     </div>
@@ -268,28 +271,28 @@ export const Index = () => {
                                     <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6">
                                         <div className="hotel__item rr-pro-img mb-30">
                                             <div className="hotel__thumb fix p-relative">
-                                                <img  src="assets/imgs/home-1/room-img3.png"  alt="img not found"/>
+                                                <img  src="template/assets/imgs/home-1/room-img3.png"  alt="img not found"/>
                                             </div>
                                         </div>
                                     </div>
                                     <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6">
                                         <div className="hotel__item rr-pro-img mb-30">
                                             <div className="hotel__thumb fix p-relative">
-                                                <img  src="assets/imgs/home-1/room-img1.png"  alt="img not found"/>
+                                                <img  src="template/assets/imgs/home-1/room-img1.png"  alt="img not found"/>
                                             </div>
                                         </div>
                                     </div>
                                     <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6">
                                         <div className="hotel__item rr-pro-img mb-30">
                                             <div className="hotel__thumb fix p-relative">
-                                                <img  src="assets/imgs/home-1/room-img4.png"  alt="img not found"/>
+                                                <img  src="template/assets/imgs/home-1/room-img4.png"  alt="img not found"/>
                                             </div>
                                         </div>
                                     </div>
                                     <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6">
                                         <div className="hotel__item rr-pro-img mb-30">
                                             <div className="hotel__thumb fix p-relative">
-                                                <img  src="assets/imgs/home-1/room-img2.png"  alt="img not found"/>
+                                                <img  src="template/assets/imgs/home-1/room-img2.png"  alt="img not found"/>
                                             </div>
                                         </div>
                                     </div>
@@ -304,28 +307,28 @@ export const Index = () => {
                                     <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6">
                                         <div className="hotel__item rr-pro-img mb-30">
                                             <div className="hotel__thumb fix p-relative">
-                                                <img  src="assets/imgs/home-1/room-img4.png"  alt="img not found"/>
+                                                <img  src="template/assets/imgs/home-1/room-img4.png"  alt="img not found"/>
                                             </div>
                                         </div>
                                     </div>
                                     <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6">
                                         <div className="hotel__item rr-pro-img mb-30">
                                             <div className="hotel__thumb fix p-relative">
-                                                <img  src="assets/imgs/home-1/room-img1.png"  alt="img not found"/>
+                                                <img  src="template/assets/imgs/home-1/room-img1.png"  alt="img not found"/>
                                             </div>
                                         </div>
                                     </div>
                                     <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6">
                                         <div className="hotel__item rr-pro-img mb-30">
                                             <div className="hotel__thumb fix p-relative">
-                                                <img  src="assets/imgs/home-1/room-img3.png"  alt="img not found"/>
+                                                <img  src="template/assets/imgs/home-1/room-img3.png"  alt="img not found"/>
                                             </div>
                                         </div>
                                     </div>
                                     <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6">
                                         <div className="hotel__item rr-pro-img mb-30">
                                             <div className="hotel__thumb fix p-relative">
-                                                <img  src="assets/imgs/home-1/room-img2.png"  alt="img not found"/>
+                                                <img  src="template/assets/imgs/home-1/room-img2.png"  alt="img not found"/>
                                             </div>
                                         </div>
                                     </div>
@@ -350,7 +353,7 @@ export const Index = () => {
             <div className="row align-items-center">
                 <div className="col-md-6">
                     <div className="about__thumb">
-                        <img src="assets/imgs/about/about-right.png" alt="img not found"/>
+                        <img src="template/assets/imgs/about/about-right.png" alt="img not found"/>
                     </div>
                 </div>
                 <div className="col-md-6">
@@ -387,7 +390,7 @@ export const Index = () => {
     </section>
 
 
-    <section className="counter__area section-space-bottom counter__bg p-relative overflow-hidden" data-background="./assets/imgs/home-1/counter-img.png">
+    <section className="counter__area section-space-bottom counter__bg p-relative overflow-hidden" data-background="./template/assets/imgs/home-1/counter-img.png">
         <div className="container">
             <div className="row">
                 <div className="counter__wrapper">
@@ -460,7 +463,7 @@ export const Index = () => {
                 <div className="col-xl-4 col-lg-4 col-md-6">
                     <div className="accomodation__item mb-30">
                         <div className="accomodation__thumb">
-                            <img src="assets/imgs/home-1/accomodation-img1.png" alt="img not found"/>
+                            <img src="template/assets/imgs/home-1/accomodation-img1.png" alt="img not found"/>
                             <div className="accomodation__box">
                                 <div className="accomodation__box-list">
                                     <div className="accomodation__box-list-icon">
@@ -501,7 +504,7 @@ export const Index = () => {
                 <div className="col-xl-4 col-lg-4 col-md-6">
                     <div className="accomodation__item mb-30">
                         <div className="accomodation__thumb">
-                            <img src="assets/imgs/home-1/accomodation-img2.png" alt="img not found"/>
+                            <img src="template/assets/imgs/home-1/accomodation-img2.png" alt="img not found"/>
                             <div className="accomodation__box">
                                 <div className="accomodation__box-list">
                                     <div className="accomodation__box-list-icon">
@@ -542,7 +545,7 @@ export const Index = () => {
                 <div className="col-xl-4 col-lg-4 col-md-6">
                     <div className="accomodation__item mb-30">
                         <div className="accomodation__thumb">
-                            <img src="assets/imgs/home-1/accomodation-img3.png" alt="img not found"/>
+                            <img src="template/assets/imgs/home-1/accomodation-img3.png" alt="img not found"/>
                             <div className="accomodation__box">
                                 <div className="accomodation__box-list">
                                     <div className="accomodation__box-list-icon">
@@ -583,7 +586,7 @@ export const Index = () => {
                 <div className="col-xl-4 col-lg-4 col-md-6">
                     <div className="accomodation__item mb-30">
                         <div className="accomodation__thumb">
-                            <img src="assets/imgs/home-1/accomodation-img4.png" alt="img not found"/>
+                            <img src="template/assets/imgs/home-1/accomodation-img4.png" alt="img not found"/>
                             <div className="accomodation__box">
                                 <div className="accomodation__box-list">
                                     <div className="accomodation__box-list-icon">
@@ -624,7 +627,7 @@ export const Index = () => {
                 <div className="col-xl-4 col-lg-4 col-md-6">
                     <div className="accomodation__item mb-30">
                         <div className="accomodation__thumb">
-                            <img src="assets/imgs/home-1/accomodation-img5.png" alt="img not found"/>
+                            <img src="template/assets/imgs/home-1/accomodation-img5.png" alt="img not found"/>
                             <div className="accomodation__box">
                                 <div className="accomodation__box-list">
                                     <div className="accomodation__box-list-icon">
@@ -665,7 +668,7 @@ export const Index = () => {
                 <div className="col-xl-4 col-lg-4 col-md-6">
                     <div className="accomodation__item mb-30">
                         <div className="accomodation__thumb">
-                            <img src="assets/imgs/home-1/accomodation-img6.png" alt="img not found"/>
+                            <img src="template/assets/imgs/home-1/accomodation-img6.png" alt="img not found"/>
                             <div className="accomodation__box">
                                 <div className="accomodation__box-list">
                                     <div className="accomodation__box-list-icon">
@@ -719,42 +722,42 @@ export const Index = () => {
                 <div className="col-md-4">
                     <div className="gallery__item mb-30">
                         <div className="gallery__thumb gallery__thumb-2">
-                            <img src="assets/imgs/gallery/img1.png" alt="img not found"/>
+                            <img src="template/assets/imgs/gallery/img1.png" alt="img not found"/>
                         </div>
                     </div>
                 </div>
                 <div className="col-md-5">
                     <div className="gallery__item mb-30">
                         <div className="gallery__thumb">
-                            <img src="assets/imgs/gallery/img2.png" alt="img not found"/>
+                            <img src="template/assets/imgs/gallery/img2.png" alt="img not found"/>
                         </div>
                     </div>
                 </div>
                 <div className="col-md-3">
                     <div className="gallery__item mb-30">
                         <div className="gallery__thumb">
-                            <img src="assets/imgs/gallery/img3.png" alt="img not found"/>
+                            <img src="template/assets/imgs/gallery/img3.png" alt="img not found"/>
                         </div>
                     </div>
                 </div>
                 <div className="col-md-3">
                     <div className="gallery__item mb-30">
                         <div className="gallery__thumb">
-                            <img src="assets/imgs/gallery/img4.png" alt="img not found"/>
+                            <img src="template/assets/imgs/gallery/img4.png" alt="img not found"/>
                         </div>
                     </div>
                 </div>
                 <div className="col-md-4">
                     <div className="gallery__item mb-30">
                         <div className="gallery__thumb">
-                            <img src="assets/imgs/gallery/img5.png" alt="img not found"/>
+                            <img src="template/assets/imgs/gallery/img5.png" alt="img not found"/>
                         </div>
                     </div>
                 </div>
                 <div className="col-md-5">
                     <div className="gallery__item mb-30">
                         <div className="gallery__thumb">
-                            <img src="assets/imgs/gallery/img6.png" alt="img not found"/>
+                            <img src="template/assets/imgs/gallery/img6.png" alt="img not found"/>
                         </div>
                     </div>
                 </div>
@@ -775,7 +778,7 @@ export const Index = () => {
             <div className="row align-items-center">
                 <div className="col-md-6">
                     <div className="our-service__thumb">
-                        <img src="assets/imgs/service/faq-right.png" alt="img not found"/>
+                        <img src="template/assets/imgs/service/faq-right.png" alt="img not found"/>
                     </div>
                 </div>
                 <div className="col-md-6">
@@ -866,6 +869,7 @@ export const Index = () => {
             </div>
         </div>
     </section>
+    <Footer />
 
     </>
   )
