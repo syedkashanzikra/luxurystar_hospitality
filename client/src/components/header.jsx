@@ -53,9 +53,33 @@ const Header = () => {
                           <li>
                             <Link to="/contact">Contact Us</Link>
                           </li>
-                          <li>
-                            <Link to="/login">Login/Signup</Link>
-                          </li>
+                          {localStorage.getItem("token") ? (
+  <li>
+    <button
+      onClick={() => {
+        localStorage.removeItem("token");
+        localStorage.removeItem("role");
+        localStorage.removeItem("user");
+        window.location.href = "/login";
+      }}
+      style={{
+        background: "transparent",
+        border: "none",
+        color: "#0ea5e9",
+        fontWeight: "bold",
+        cursor: "pointer",
+        padding: 0
+      }}
+    >
+      Logout
+    </button>
+  </li>
+) : (
+  <li>
+    <Link to="/login">Login/Signup</Link>
+  </li>
+)}
+
                         </ul>
                       </nav>
                     </div>

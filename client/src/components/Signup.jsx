@@ -6,15 +6,16 @@ import Breadcrumb from "./subcomponents/Breadcrumb";
 import Header from './Header.jsx';
 import Footer from './Footer.jsx'
 import { Link } from 'react-router-dom';
+import { registerUser } from "../api"; 
 
 const Signup = () => {
+  const [showPassword, setShowPassword] = useState(false);
+  const [loading, setLoading] = useState(false);
 
-    const [showPassword, setShowPassword] = useState(false);
+  const togglePasswordVisibility = () => {
+    setShowPassword(prevState => !prevState);
+  };
 
-    const togglePasswordVisibility = () => {
-      setShowPassword(prevState => !prevState);
-    };
-    
   const [signupData, setSignupData] = useState({
     name: "",
     email: "",
@@ -31,57 +32,22 @@ const Signup = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
+    setLoading(true);
     try {
-      const response = await fetch("http://localhost:5000/api/signup", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(signupData)
-      });
-
-      const data = await response.json();
-
-      if (response.ok) {
-        toast.success(data.message || "Account created successfully!", {
-          position: "top-center",
-          autoClose: 2000,
-          hideProgressBar: false,
-          closeOnClick: true,
-          pauseOnHover: true,
-          draggable: true,
-          theme: "colored",
-        });
-        // Clear form after success
-        setSignupData({ name: "", email: "", phone: "", password: "" });
-      } else {
-        toast.error(data.message || "Signup failed!", {
-          position: "top-center",
-          autoClose: 2000,
-          hideProgressBar: false,
-          closeOnClick: true,
-          pauseOnHover: true,
-          draggable: true,
-          theme: "colored",
-        });
-      }
-
-    } catch (error) {
-      console.error("Signup error:", error);
-      toast.error("Something went wrong!", {
-        position: "top-center",
-        autoClose: 2000,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        theme: "colored",
-      });
+      const res = await registerUser(signupData); // ✅ includes phone now
+      toast.success("Account created!");
+      localStorage.setItem("token", res.data.token);
+      // Optional: redirect to dashboard
+    } catch (err) {
+      toast.error(err.response?.data?.message || "Signup failed");
+    } finally {
+      setLoading(false);
     }
   };
 
   return (
     <>
-     <Header />
+      <Header />
       <Breadcrumb
         title="Signup"
         paths={[
@@ -90,7 +56,6 @@ const Signup = () => {
         ]}
       />
 
-      {/* Signup Form */}
       <div className="si__contact__area section-space">
         <div className="container custom-width-2">
           <div className="row si__contact__bg">
@@ -142,47 +107,59 @@ const Signup = () => {
               </div>
 
               <div className="col-lg-6 offset-lg-3">
-  <div className="si__contact__info text-center" style={{ position: "relative" }}>
-    <input
-      type={showPassword ? "text" : "password"}
-      name="password"
-      placeholder="Your Password"
-      required
-      value={signupData.password}
-      onChange={handleChange}
-      style={{ paddingRight: "40px" }}
-    />
-    <span
-      onClick={togglePasswordVisibility}
-      style={{
-        position: "absolute",
-        right: "15px",
-        top: "67%",
-        transform: "translateY(-50%)",
-        cursor: "pointer",
-        fontSize: "18px",
-        color: "#999"
-      }}
-    >
-      {showPassword ? <FaEyeSlash /> : <FaEye />}
-    </span>
-  </div>
-</div>
-
+                <div className="si__contact__info text-center" style={{ position: "relative" }}>
+                  <input
+                    type={showPassword ? "text" : "password"}
+                    name="password"
+                    placeholder="Your Password"
+                    required
+                    value={signupData.password}
+                    onChange={handleChange}
+                    style={{ paddingRight: "40px" }}
+                  />
+                  <span
+                    onClick={togglePasswordVisibility}
+                    style={{
+                      position: "absolute",
+                      right: "15px",
+                      top: "67%",
+                      transform: "translateY(-50%)",
+                      cursor: "pointer",
+                      fontSize: "18px",
+                      color: "#999"
+                    }}
+                  >
+                    {showPassword ? <FaEyeSlash /> : <FaEye />}
+                  </span>
+                </div>
+              </div>
 
               <div className="col-lg-12 text-center">
-                <button type="submit" className="room__btn2 mt-5">
-                  Create Account
+                <button
+                  type="submit"
+                  className="room__btn2 mt-5"
+                  disabled={loading}
+                  style={{ opacity: loading ? 0.6 : 1 }}
+                >
+                  {loading ? "Creating..." : "Create Account"}
                 </button>
               </div>
+
               <div className="col-lg-12 text-center mt-3">
-                                <p style={{ fontSize: "1.5rem", color: "#555" }}>
-                                    Already have an account?{" "}
-                                    <Link to="/login" style={{ color: "#0ea5e9", textDecoration: "none", fontWeight: "bold" }}>
-                                        Login now
-                                    </Link>
-                                </p>
-                            </div>
+                <p style={{ fontSize: "1.5rem", color: "#555" }}>
+                  Already have an account?{" "}
+                  <Link
+                    to="/login"
+                    style={{
+                      color: "#0ea5e9",
+                      textDecoration: "none",
+                      fontWeight: "bold"
+                    }}
+                  >
+                    Login now
+                  </Link>
+                </p>
+              </div>
             </form>
           </div>
         </div>
@@ -190,7 +167,6 @@ const Signup = () => {
 
       <ToastContainer />
       <Footer />
-
     </>
   );
 };
